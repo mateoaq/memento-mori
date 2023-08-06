@@ -6,39 +6,6 @@ body {
   margin: 0 auto;
 }
 
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-
-  #container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Estilos para pantallas medianas */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  body {
-    font-size: 16px;
-  }
-
-  #container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Estilos para pantallas grandes */
-@media only screen and (min-width: 901px) {
-  body {
-    font-size: 18px;
-  }
-
-  #container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 #open-popup {
   padding: 10px 20px;
   background-color: #007bff;
@@ -102,9 +69,10 @@ button[type="submit"] {
 #container {
   width: 100%;
   display: grid;
-  grid-template-columns: 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083% 2.083%;
+  grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
 hr {
@@ -112,9 +80,8 @@ hr {
 }
 
 .box {
-  width: 8px;
-  height: 8px;
-  margin: 2px 2px;
+  width: 10px;
+  height: 10px;
   border: 1px solid black;
 }
 
