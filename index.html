@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semanas de Vida</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h1>Memento mori</h1>
+    <p>
+      Soy <b id="nombre"></b>, nací el <b id="fecha-nac"></b> y hoy es
+      <b id="fecha"></b>
+    </p>
+    <p>Cada bloque representa una semana y el total equivale a 90 años.</p>
+    <span
+      >Bloques verdes representan semanas vividas, bloques vacios semanas por
+      vivir.</span
+    >
+    <hr />
+    <div id="popup-container">
+      <div id="popup">
+        <h2>Introduce tus datos</h2>
+        <form id="form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" required />
+
+          <label for="birthdate">Fecha de Nacimiento:</label>
+          <input type="date" id="birthdate" required />
+
+          <button type="submit">Continuar</button>
+        </form>
+      </div>
+    </div>
+    <div id="container"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
